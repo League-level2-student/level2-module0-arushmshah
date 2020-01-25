@@ -25,11 +25,24 @@ public class _00_ArrayCheatSheet {
 		   moreAges[i]=new Random().nextInt(50);
 		   System.out.println(moreAges[i]);
 		}
-
+int smallest = moreAges[0];
 		//8. without printing the entire array, print only the smallest number in the array
-		
+		for (int i=0;i<moreAges.length;i++) {
+			if(smallest>moreAges[i]) {
+		smallest = moreAges[i];
+			}	
+		}
+		System.out.println(smallest + " number");
 		//9 print the entire array to see if step 8 was correct
 		
 		//10. print the largest number in the array.
+		int largest = moreAges[0];
+		
+		for (int i=0;i<moreAges.length;i++) {
+			if(largest<moreAges[i]) {
+		largest = moreAges[i];
+			}	
+		}
+		System.out.println(largest + " number2");
 	}
 }
